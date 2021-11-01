@@ -12,52 +12,18 @@
         <thead>
           <tr>
             <th scope="col">name</th>
-            <th scope="col">bruhims</th>
-            <th scope="col">icNumber</th>
             <th scope="col">kampong</th>
             <th scope="col">jalan</th>
             <th scope="col">simpang</th>
-            <th scope="col">house_number</th>
-            <th scope="col">contact_1</th>
-            <th scope="col">email</th>
-            <th scope="col">qo</th>
-            <th scope="col">radioTOD</th>
-            <th scope="col">BNHC</th>
-            <th scope="col">TUHC</th>
-            <th scope="col">TEHC</th>
-            <th scope="col">BHC</th>
-            <th scope="col">radioDistrict</th>
-            <th scope="col">pm</th>
-            <th scope="col">re</th>
-            <th scope="col">radioDURATION</th>
-            <th scope="col">dateSubmit</th>
           </tr>
         </thead>
         <tbody>
-        <%StandardOrderMOHList.forEach(User => {%>
+        <%UserList.forEach(User => {%>
             <tr>
-                <th scope="row"><%= %StandardOrderMOH.name %></th>
-                <td>%= StandardOrderMOH.name %></td>
-                <td>%= StandardOrderMOH.bruhims %></td>
-                <td>%= StandardOrderMOH.icNumber %></td>
-                <td>%= StandardOrderMOH.kampong %></td>
-                <td>%= StandardOrderMOH.jalan %></td>
-                <td>%= StandardOrderMOH.simpang %></td>
-                <td>%= StandardOrderMOH.house_number %></td>
-                <td>%= StandardOrderMOH.contact_1 %></td>
-                <td>%= StandardOrderMOH.email %></td>
-                <td>%= StandardOrderMOH.qo %></td>
-                <td>%= StandardOrderMOH.radioTOD %></td>
-                <td>%= StandardOrderMOH.BNHC %></td>
-                <td>%= StandardOrderMOH.TUHC %></td>
-                <td>%= StandardOrderMOH.TEHC %></td>
-                <td>%= StandardOrderMOH.BHC %></td>
-                <td>%= StandardOrderMOH.radioDistrict %></td>
-                <td>%= StandardOrderMOH.pm %></td>
-                <td>%= StandardOrderMOH.re %></td>
-                <td>%= StandardOrderMOH.radioDURATION %></td>
-                <td>%= StandardOrderMOH.dateSubmit %></td>
-                
+                <th scope="row"><%= User.name %></th>
+                <td><%= User.kampong %></td>
+                <td><%= User.jalan %></td>
+                <td><%= User.simpang %></td>
             </tr>
         <%})%>
         </tbody>
