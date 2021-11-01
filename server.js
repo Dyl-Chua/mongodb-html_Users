@@ -10,9 +10,28 @@ mongoose.connect('mongodb://goRush:gsb2332065@cluster0-shard-00-00.rikek.mongodb
 
 const usersSchema = {
     name: String,
+    bruhims: String,
+    passport: String,
+    icNumber: String,
     kampong: String,
     jalan: String,
-    simpang: String
+    simpang: String,
+    house_Number: String,
+    contact_1: String,
+    email: String,
+    qo: String,
+    radioTOD: String,
+    BNHC: String,
+    TUHC: String,
+    TEHC: String,
+    BHC: String,
+    radioDistrict: String,
+    pm: String,
+    re: String,
+    radioNOTI: String,
+    radioDURATION: String,
+    dateSubmit: Date,
+    ordertaken: String
 }
 
 const User = mongoose.model('User', usersSchema);
