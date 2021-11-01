@@ -12,18 +12,52 @@
         <thead>
           <tr>
             <th scope="col">name</th>
+            <th scope="col">bruhims</th>
             <th scope="col">kampong</th>
             <th scope="col">jalan</th>
             <th scope="col">simpang</th>
+            <th scope="col">house_Number</th>
+            <th scope="col">contact_1</th>
+            <th scope="col">email</th>
+            <th scope="col">qo</th>
+            <th scope="col">radioTOD</th>
+            <th scope="col">BNHC</th>
+            <th scope="col">TUHC</th>
+            <th scope="col">TEHC</th>
+            <th scope="col">BHC</th>
+            <th scope="col">radioDistrict</th>
+            <th scope="col">pm</th>
+            <th scope="col">re</th>
+            <th scope="col">radioNOTI</th>
+            <th scope="col">radioDURATION</th>
+            <th scope="col">dateSubmit</th>
+            <th scope="col">ordertaken</th>
           </tr>
         </thead>
         <tbody>
         <%UserList.forEach(User => {%>
             <tr>
                 <th scope="row"><%= User.name %></th>
+                <td><%= User.bruhims %></td>
                 <td><%= User.kampong %></td>
                 <td><%= User.jalan %></td>
                 <td><%= User.simpang %></td>
+                <td><%= User.house_Number %></td>
+                <td><%= User.contact_1 %></td>
+                <td><%= User.email %></td>
+                <td><%= User.qo %></td>
+                <td><%= User.radioTOD %></td>
+                <td><%= User.BNHC %></td>
+                <td><%= User.TUHC %></td>
+                <td><%= User.TEHC %></td>
+                <td><%= User.BHC %></td>
+                <td><%= User.radioDistrict %></td>
+                <td><%= User.pm %></td>
+                <td><%= User.re %></td>
+                <td><%= User.radioNOTI %></td>
+                <td><%= User.radioDURATION %></td>
+                <td><%= User.dateSubmit %></td>
+                <td><%= User.ordertaken %></td>
             </tr>
         <%})%>
         </tbody>
